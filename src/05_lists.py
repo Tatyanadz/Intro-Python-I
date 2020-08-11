@@ -13,22 +13,22 @@ print(x)
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
-print(x + y)
+x.extend(y)
+print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
-y.pop(0)
-print(x + y)
+x.pop(4)
+print(x)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
-y.insert(1, 99)
-print(x + y)
+x.insert(5, 99)
+print(x)
 
 # Print the length of list x
 # YOUR CODE HERE
-print("length", lex(x))
+print(len(x))
 # Print all the values in x multiplied by 1000
 # YOUR CODE HERE
-for num in x:
-    print(num*1000)
+print([element * 1000 for element in x])
